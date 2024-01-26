@@ -8,16 +8,16 @@ function Footer() {
     <div className='footer-container'>
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-            Join the adventure newsletter to receive our best vacation deals
+            Subscribe to our newsletter
         </p>
         <p className="footer-subscription-text">
-            You can unsubscribe at any time.
+            Email
         </p>
         <div className="input-areas">
             <form>
                 <input type='email' name='email' placeholder='Your Email' className='footer-input' />
-                <Button buttonStyle='btn--outline'>
-                    Subscribe
+                <Button buttonStyle='btn--subscribe'>
+                    Submit
                 </Button>
             </form>
         </div>
@@ -25,49 +25,22 @@ function Footer() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
             <div className="footer-link-items">
-                <h2>About Us</h2>
-                <Link to='/sign-up'>How it works</Link>
-                <Link to="/">Testimonials</Link>
-                <Link to="/">Careers</Link>
-                <Link to="/">Investors</Link>
-                <Link to='/'>Terms of service</Link>
+                <h2>Company</h2>
+                <Link to='/sign-up'>Goals & Vision</Link>
+                <Link to="/">Products & Services</Link>
+                <Link to="/">Partners</Link>
+                <Link to="/">Clients</Link>
             </div>
+
             <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <h2>Community</h2>
+            <Link to='/'>News</Link>
+            <Link to='/'>Blog</Link>
+            <Link to='/'>Contact Us</Link>
           </div>
-        </div>
-        <div className='footer-link-wrapper'>
+
           <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
-        </div>
-      </div>
-      <section className="social-media">
-        <div className="social-media-wrap">
-            <div className="footer-logo">
-                <Link to='/' className="social-logo">
-                    TRVL <i className="fab fa-typo3"></i>
-                </Link>
-            </div>
-            <small className="website-rights">
-                TRVL © 2020
-            </small>
-            <div className="social-icons">
+            <h2>Be Social</h2>
                 <Link to='/' className="social-icon-link facebook" target='_blank' aria-label='Facebook'>
                     <i className="fab fa-facebook-f" />
                 </Link>
@@ -98,7 +71,22 @@ function Footer() {
             >
               <i class='fab fa-linkedin' />
             </Link>
-            </div>
+          </div>
+        </div>
+      </div>
+      <section className="social-media">
+        <div className="social-media-wrap">
+            <small className="website-rights">
+                Copyright 2022 © Tenece Professional Services. All rights reserved.
+            </small>
+        </div>
+        <div className="social-icons">
+          <Link to="/" class="footer--privacy">
+                IMS Policy Statement
+          </Link>
+          <Link to="/" class="footer--privacy">
+                Privacy Policies
+          </Link>
         </div>
       </section>
     </div>
