@@ -40,8 +40,9 @@ function Footer() {
           <Link to='/'>Contact Us</Link>
         </div>
 
-        <div class='footer-link-items'>
+        <div class='footer-link-items social-icons'>
           <h2>Be Social</h2>
+          <div className='social-icons-alone'>
           <Link to='/' className="social-icon-link facebook" target='_blank' aria-label='Facebook'>
             <i className="fab fa-facebook-f" />
           </Link>
@@ -67,6 +68,7 @@ function Footer() {
           >
             <i class='fab fa-linkedin' />
           </Link>
+          </div>
         </div>
       </div>
       <section className="social-media">
