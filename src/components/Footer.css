@@ -43,7 +43,7 @@
     margin-right: 10px;
     outline: none;
     font-size: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border: 1px solid #fff;
 }
 
@@ -70,6 +70,10 @@
     font-size: 0.77rem;
     font-weight: 300;
 
+}
+
+.hover-links a:hover {
+    color: #000;
 }
 
 .social-icons a {
@@ -117,15 +121,15 @@
     .footer-wrapper {
         flex-flow: row nowrap;
         width: 90%;
-        border: 1px solid ;
+        max-width: 1020px;
     }
 
     .footer-subscription {
-        flex-basis: 80%;
+        flex-basis: 62%;
     }
 
     .footer-link-items {
-        flex-basis: 30%;
+        flex-basis: 35%;
     }
 }
 

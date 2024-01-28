@@ -25,7 +25,7 @@ function Footer() {
           </div>
         </section>
 
-        <div className="footer-link-items">
+        <div className="footer-link-items hover-links">
           <h2>Company</h2>
           <Link to='/sign-up'>Goals & Vision</Link>
           <Link to="/">Products & Services</Link>
@@ -33,7 +33,7 @@ function Footer() {
           <Link to="/">Clients</Link>
         </div>
 
-        <div class='footer-link-items'>
+        <div class='footer-link-items hover-links'>
           <h2>Community</h2>
           <Link to='/'>News</Link>
           <Link to='/'>Blog</Link>
