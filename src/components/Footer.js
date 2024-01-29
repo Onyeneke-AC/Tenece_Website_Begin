@@ -77,7 +77,7 @@ function Footer() {
                 Copyright 2022 © Tenece Professional Services. All rights reserved.
             </small>
         </div>
-        <div className="social-icons">
+        <div className="privacy-links">
           <Link to="/" class="footer--privacy">
                 IMS Policy Statement
           </Link>
