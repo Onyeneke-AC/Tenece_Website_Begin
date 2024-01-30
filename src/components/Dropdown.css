@@ -1,18 +1,19 @@
 .dropdown-menu {
-    width: 200px;
+    width: 11.5%;
     position: absolute;
-    top: 80px;
+    top: 65px;
     list-style: none;
     text-align: start;
+    max-width: 90px;
 }
 
 .dropdown-menu li {
-    background: #fff;
+    background: #000;
     cursor: pointer;
 }
 
 .dropdown-menu li:hover {
-    background: lightgray;
+    background: #DA251C;
 }
 
 .dropdown-menu.clicked {
@@ -24,6 +25,7 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: blue;
-    padding: 16px;
+    color: #fff;
+    font-size: 11.5px;
+    padding: 0.3rem 0.1rem 0.2rem 0.4rem;
 }

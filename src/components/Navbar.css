@@ -91,6 +91,11 @@
   display: none;
 }
 
+.nav-links:hover {
+  border-top: 1px solid #DA251C;
+  color: #DA251C;
+}
+
 @media screen and (max-width: 1122px) {
   .nav-links {
     font-size: 8px;
@@ -148,10 +153,6 @@
     padding-bottom: 0.5rem
   }
 
-  .nav-links:hover {
-    border-top: 1px solid #DA251C;
-    color: #DA251C;
-  }
 
   .menu-icon{
     display: block;
