@@ -1,12 +1,30 @@
 import React, {useState} from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import './Navbar.css';
+import Dropdown from './Dropdown' 
 
 function Navbar() {
     const [click, setClick] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+
+    const onMouseEnter = () => {
+        if (window.innerWidth < 960) {
+            setDropdown(false);
+        } else {
+            setDropdown(true);
+        }
+    };
+
+    const onMouseLeave = () => {
+        if (window.innerWidth < 960) {
+            setDropdown(true);
+        } else {
+            setDropdown(false);
+        }
+    } 
 
     return (
         <>
@@ -25,10 +43,14 @@ function Navbar() {
                                 Home
                             </NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item"
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
+                        >
                             <NavLink to='/about' className='nav-links' onClick={closeMobileMenu}>
                                 About Us <i className="fas fa-caret-down"/>
                             </NavLink>
+                            {dropdown && <Dropdown />}
                         </li>
                         <li className="nav-item">
                             <NavLink to='/services' className='nav-links' onClick={closeMobileMenu}>
