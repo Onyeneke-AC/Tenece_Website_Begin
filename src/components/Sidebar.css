@@ -22,3 +22,27 @@
     transition: all 0.8s ease;
     z-index: 1000;
   } */
+
+Nav .lang {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.lang a{
+  color: #666;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 6.5rem;
+  font-family: Montserrat;
+  
+}
+
+.flag {
+  width: 1.5rem
+}
+
+.lang-down {
+  width: 0.7rem;
+}

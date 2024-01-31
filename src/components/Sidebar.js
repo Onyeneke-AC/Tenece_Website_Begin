@@ -6,6 +6,7 @@ import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
+import "./Sidebar.css";
 
 const Nav = styled.div`
   background: #15171c;
@@ -45,13 +46,13 @@ const SidebarWrap = styled.div`
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
 
-  const onMouseEnter = () => {
-        if (window.innerWidth < 765) {
-            setSidebar(true);
-        } else {
-            setSidebar(false);
-        }
-    };
+  // const onMouseEnter = () => {
+  //       if (window.innerWidth < 765) {
+  //           setSidebar(true);
+  //       } else {
+  //           setSidebar(false);
+  //       }
+  //   };
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -62,6 +63,12 @@ const Sidebar = () => {
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />MENU
           </NavIcon>
+          <div className="lang">
+            <Link to='/Modal'>
+              <img src="icons/english.png" alt="British flag" className='flag'/>
+              English <img src="icons/Link → ▼.png" alt="down" className='lang-down' />
+            </Link>
+          </div>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
