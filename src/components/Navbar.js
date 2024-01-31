@@ -35,9 +35,6 @@ function Navbar() {
                         <i className='fas fa-bars'/> MENU
                     </div>
                     <ul className={click ? 'nav-menu active': 'nav-menu'}>
-                    <div className={click? 'close-icon active':'close-icon'} onClick={handleClick}>
-                        <i className='fas fa-times'/> CLOSE
-                    </div>
                         <li className="nav-item">
                             <NavLink to='/' className='nav-links' onClick={closeMobileMenu}>
                                 Home
@@ -53,7 +50,7 @@ function Navbar() {
                             {dropdown && <Dropdown />}
                         </li>
                         <li className="nav-item">
-                            <NavLink to='/services' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink to='/products' className='nav-links' onClick={closeMobileMenu}>
                                 Products & Services
                             </NavLink>
                         </li>

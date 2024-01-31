@@ -1,0 +1,24 @@
+/* .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    /* left:-100%; 
+    bottom: 0px;
+    width: 30%;
+    min-width: 12rem;
+    padding: 0.5rem;
+    border-radius: 0;
+    transition: all 0.8s ease;
+
+    /* Active Characteristics
+
+    background-color: #111111;
+    opacity: 0.95;
+    left: 0;
+    transition: all 0.8s ease;
+    z-index: 1000;
+  } */

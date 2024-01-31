@@ -6,12 +6,14 @@ import Home from './components/pages/Home';
 import Introduction from './components/Introduction';
 import Extra from './components/Extra';
 import Footer from './components/Footer';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        <Sidebar />
         <Introduction />
         <Extra />
         <Footer />
