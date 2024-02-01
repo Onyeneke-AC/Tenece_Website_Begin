@@ -18,7 +18,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-
 }
 
 .navbar-container {
@@ -98,41 +97,17 @@
 
 .nav-menu.active {
   display: none;
-  /* background-color: #111111;
-  opacity: 0.95;
-  left: 0;
-  transition: all 0.8s ease;
-  z-index: 1; */
 }
 
 @media screen and (max-width: 1122px) {
   .nav-links {
-    font-size: 8px;
-    
+    font-size: 8px;  
   }
 }
 
 @media screen and (max-width: 765px) {
-  /* .NavbarItems {
-    position: relative;
-  } */
-
   .navbar {
     display: none;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left:-100%;
-    bottom: 0px;
-    width: 30%;
-    min-width: 12rem;
-    padding: 0.5rem;
-    border-radius: 0;
-    transition: all 0.8s ease; */
   }
 
 
@@ -155,44 +130,4 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem
   }
-
-
-  .menu-icon{
-    display: block;
-    color: #666;
-    margin: 0 auto;
-    padding: 0.5rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-  }
-
-  .fa-bars {
-    color: #DA251C;
-  }
-
-  .close-icon.active {
-    top: 25px;
-    display: flex;
-    color: #666;
-    z-index: 1001;
-    padding: 0.8rem;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #000;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-  }
-
-  .close-icon{
-    left: -100%;
-  }
-
-  .fa-times {
-    font-size: 1.3rem;
-    margin-right: 0.5rem;
-  }
-
-
 }

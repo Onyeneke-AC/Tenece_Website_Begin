@@ -1,48 +1,107 @@
-/* .sidebar-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    /* left:-100%; 
-    bottom: 0px;
-    width: 30%;
-    min-width: 12rem;
-    padding: 0.5rem;
-    border-radius: 0;
-    transition: all 0.8s ease;
-
-    /* Active Characteristics
-
-    background-color: #111111;
-    opacity: 0.95;
-    left: 0;
-    transition: all 0.8s ease;
-    z-index: 1000;
-  } */
-
-Nav .lang {
-  margin-right: 0;
-  padding-right: 0;
+.side-nav {
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 999;
+  padding: 1rem auto;
+  overflow: hidden;
 }
 
-.lang a{
-  color: #666;
-  text-decoration: none;
+.side-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  /* border: 1px solid blue; */
+}
+
+.side-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 6.5rem;
-  font-family: Montserrat;
-  
+  justify-content: space-evenly;
+  gap:0;
+  height: 60px;
+  width: 88%;
+  max-width: 1500px;
+  padding: 0 1rem;
+  /* border: 1px solid white; */
 }
 
-.flag {
-  width: 1.5rem
+.side-icon {
+  display: block;
+  color: #666;
+  margin: 0 auto;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-bottom: 1px solid #210700;
+  max-width: 70vw;
+  border-radius: 0.3rem;
 }
 
-.lang-down {
-  width: 0.7rem;
+.fa-bars {
+  color: #DA251C;
+  margin-right: 0.3rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left:-100%;
+  bottom: 0px;
+  width: 40%;
+  min-width: 12.3rem;
+  padding: 0.5rem;
+  border-radius: 0;
+  transition: all 0.8s ease; 
+}
+
+.sidebar-nav.active {
+  background-color: #111111;
+  opacity: 0.95;
+  left: 0;
+  transition: all 0.8s ease;
+  z-index: 1; 
+}
+
+.sidebar-wrap {
+  width: 100%;
+}
+
+.close-icon {
+  top: 25px;
+  display: flex;
+  color: #666;
+  z-index: 1001;
+  padding: 0.8rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+
+.fa-times {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .side-nav {
+    display: none;
+  }
+
+  .sidebar-nav {
+    display: none;
+  }
 }
