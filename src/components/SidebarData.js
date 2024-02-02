@@ -1,7 +1,5 @@
 import React from 'react';
 
-import * as RiIcons from 'react-icons/ri';
-
 export const SidebarData = [
     {
         title: 'Home',
@@ -10,8 +8,8 @@ export const SidebarData = [
     {
         title: 'About Us',
         path: '/about',
-        iconClosed: <RiIcons.RiArrowDownSFill />,
-        iconOpened: <RiIcons.RiArrowUpSFill />,
+        iconClosed: <i className="fas fa-caret-down"/>,
+        iconOpened: <i className="fas fa-caret-up"/>,
         subNav: [
             {
                 title: 'Who We Are',
@@ -46,8 +44,8 @@ export const SidebarData = [
     {
         title: 'Media',
         path: '/media',
-        iconClosed: <RiIcons.RiArrowDownSFill />,
-        iconOpened: <RiIcons.RiArrowUpSFill />,
+        iconClosed: <i className="fas fa-caret-down"/>,
+        iconOpened: <i className="fas fa-caret-up"/>,
         subNav: [
             {
                 title: 'News',
