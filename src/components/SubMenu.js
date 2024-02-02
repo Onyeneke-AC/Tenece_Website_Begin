@@ -4,38 +4,40 @@ import styled from 'styled-components';
 
 const SidebarLink = styled(Link)`
   display: flex;
-  color: #e1e9fc;
+  color: #fff;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 1rem;
   list-style: none;
   text-decoration: none;
-  font-size: 10.5px;
-  border: 1px solid blue;
+  font-size: 11.8px;
+  // border: 1px solid blue;
 
   &:hover {
-    background: #252831;
-    border-left: 4px solid #632ce4;
+    color: #DA251C;
+    border-top: 1px solid #DA251C;
     cursor: pointer;
   }
 `;
 
 const SidebarLabel = styled.span`
-  margin-left: 16px;
+  margin-left: 3px;
 `;
 
 const DropdownLink = styled(Link)`
-  background: #414757;
+  background: #000;
   padding: 0.8rem 1rem;
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #f5f5f5;
-  font-size: 18px;
+  color: #fff;
+  font-size: 11.8px;
+  transition:  all 0.8s ease;
 
   &:hover {
-    background: #632ce4;
+    color: #DA251C;
     cursor: pointer;
+    border-top: 1px solid #DA251C;
   }
 `;
 
