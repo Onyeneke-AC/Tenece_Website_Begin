@@ -7,6 +7,7 @@ import Introduction from './components/Introduction';
 import Extra from './components/Extra';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
+import News from './components/News';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Sidebar />
+        <News />
         <Introduction />
         <Extra />
         <Footer />
