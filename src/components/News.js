@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from './Carousel';
 import { NewsData } from './NewsData';
+import './News.css';
 
 function News() {
   return (
