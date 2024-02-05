@@ -11,7 +11,7 @@ function News() {
       </div>
       <div className="news_carousel">
         {NewsData.map((item, index) => {
-            <Carousel className='news_slide' carouselSize= 'size--primary' carouselFont='font--primary'/>
+            return <Carousel item={item} key={index} className='news_slide' carouselSize= 'size--primary' carouselFont='font--primary'/>
         })
         }
       </div>
