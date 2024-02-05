@@ -10,7 +10,10 @@ function News() {
         NEWS
       </div>
       <div className="news_carousel">
-        <Carousel className='news_slide' carouselSize= 'size--primary' carouselFont='font--primary' carouselData={NewsData} />
+        {NewsData.map((item, index) => {
+            <Carousel className='news_slide' carouselSize= 'size--primary' carouselFont='font--primary'/>
+        })
+        }
       </div>
     </div>
   )
