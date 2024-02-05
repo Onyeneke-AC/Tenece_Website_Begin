@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Carousel  = () => {
+export const Carousel  = ({ item }) => {
     return (
         <div className="carousel">
-            
+
         </div>
     )
 };
