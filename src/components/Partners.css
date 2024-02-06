@@ -1,19 +1,41 @@
+:root {
+    --total-partners: 40;
+    --logo-width: 7rem;
+    --total-partners-width: calc(var(var(--total-partners)) * var(var(--logo-width) * 2));
+}
+
 .my-slider {
     border: 1px solid black;
+    width: 90vw;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
 }
 
 .slider {
     border: 1px solid red;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider:hover .brands{
+    animation-play-state: paused;
+    cursor: pointer;
 }
 
 .brands {
     /* border: 4px solid green; */
     display: flex;
+    width: var(--total-partners-width);
+    align-items: center;
+    gap: 50px;
+    animation: slideLeft 30s linear infinite;
 
 }
 
 .carousel_img {
     /* border: 2px solid green; */
     width: 7rem;
-    margin-right: 3rem;
 }

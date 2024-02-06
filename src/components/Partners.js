@@ -11,6 +11,7 @@ function Partners() {
             <div className="slider">
                 <div className="brands">
                     <PartnersCarousel />
+                    <PartnersCarousel />
                 </div>
             </div>
         </div>
