@@ -50,12 +50,6 @@
     animation: slideLeft 130s linear infinite;
 }
 
-@keyframes slideLeft {
-    100% {
-        transform: translateX(calc(-100% / 2));
-    }
-}
-
 .news_slide:hover .news_exact {
     animation-play-state: paused;
     cursor: pointer;

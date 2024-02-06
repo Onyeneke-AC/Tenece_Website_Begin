@@ -44,3 +44,13 @@
   color: #fff;
   font-size: 100px;
 }
+
+img {
+  width: 100%;
+}
+
+@keyframes slideLeft {
+    100% {
+        transform: translateX(calc(-100% / 2));
+    }
+}

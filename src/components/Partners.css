@@ -6,6 +6,14 @@
     border: 1px solid red;
 }
 
-.brand {
-    border: 4px solid green;
+.brands {
+    /* border: 4px solid green; */
+    display: flex;
+
+}
+
+.carousel_img {
+    /* border: 2px solid green; */
+    width: 7rem;
+    margin-right: 3rem;
 }
