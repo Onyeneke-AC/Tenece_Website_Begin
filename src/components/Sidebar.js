@@ -47,13 +47,13 @@ const Sidebar = () => {
         </div>
         {/* <SidebarNav sidebar={sidebar}> */}
         <div className={sidebar? 'sidebar-nav active' : 'sidebar-nav'} >
-          <div className='sidebar-wrap'>
+          <div className='sidebar-wrap' >
             <div className='close-icon' to='#' onClick={showSidebar}>
               <i className='fas fa-times'/>
               CLOSE
             </div>
             {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
+              return <SubMenu item={item} key={index}/>;
             })}
           </div>
         </div>

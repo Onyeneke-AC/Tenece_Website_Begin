@@ -1,7 +1,6 @@
 import React from 'react';
-import { Carousel } from './Carousel';
-import { NewsData } from './NewsData';
 import './News.css';
+import NewsCarousel from './NewsCarousel';
 
 function News() {
     
@@ -13,18 +12,8 @@ function News() {
       <div className='news_slide'>
       <div className="news_carousel">
         <div className='news_exact'>
-            {NewsData.map((item, index) => {
-            return( 
-                <Carousel item={item} key={index} />
-                )
-            })
-        }
-        {NewsData.map((item, index) => {
-            return( 
-                <Carousel item={item} key={index} />
-                )
-            })
-        }
+            <NewsCarousel />
+            <NewsCarousel />
         </div>
       </div>
       </div>
