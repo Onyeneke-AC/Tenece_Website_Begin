@@ -60,3 +60,19 @@
     animation-play-state: paused;
     cursor: pointer;
 }
+
+.carousel-link {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.carousel {
+    /* border: 1px solid red; */
+    height: 30px;
+    width: max-content;
+    margin: 0 auto;
+    color: #666;
+    font-size: 14px;
+    padding: 0.5rem;
+    font-weight: 600;
+}

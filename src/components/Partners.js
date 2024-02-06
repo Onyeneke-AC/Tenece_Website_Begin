@@ -1,4 +1,6 @@
 import React from 'react'
+import PartnersCarousel from './PartnersCarousel'
+import "./Partners.css"
 
 function Partners() {
   return (
@@ -8,7 +10,7 @@ function Partners() {
         <div className="my-slider">
             <div className="slider">
                 <div className="brands">
-                    
+                    <PartnersCarousel />
                 </div>
             </div>
         </div>

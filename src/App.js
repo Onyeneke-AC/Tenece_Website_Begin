@@ -8,6 +8,7 @@ import Extra from './components/Extra';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import News from './components/News';
+import Partners from './components/Partners';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <News />
         <Introduction />
         <Extra />
+        <Partners />
         <Footer />
         <Switch>
           <Route path="/" exact Component={Home}/>
