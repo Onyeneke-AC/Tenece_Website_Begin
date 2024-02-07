@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import News from './components/News';
 import Partners from './components/Partners';
+import Clients from './components/Clients';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <News />
         <Introduction />
         <Extra />
+        <Clients />
         <Partners />
         <Footer />
         <Switch>

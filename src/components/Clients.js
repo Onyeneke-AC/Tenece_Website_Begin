@@ -1,21 +1,26 @@
-import React from 'react'
-import ClientsCarousel from './ClientsCarousel'
-import "./Partners.css"
+import React from 'react';
+import ClientsCarousel from './ClientsCarousel';
+import "./PartnersClients.css";
+import { Button } from './Button';
 
 function Clients() {
   return (
-    <div className='clients'>
+    <div className='part--cli'>
         <h2 className='sub_h2'>Our Clients</h2>
 
         <div className="my-slider">
             <div className="slider">
-                <div className="brands">
+                <div className="clients_brands">
                     <ClientsCarousel />
                     <ClientsCarousel />
                 </div>
             </div>
         </div>
-      
+        <div className="btn_int">
+            <Button className='btns' buttonStyle='btn--primary' buttonRoute='/clients' buttonSize='btn--normal'>
+                    View more
+            </Button>
+        </div>  
     </div>
   )
 }

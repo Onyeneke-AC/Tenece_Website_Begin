@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--subscribe'] //css classes
 
-const SIZES = ['btn--medium', 'btn--large']
+const SIZES = ['btn--medium', 'btn--normal']
 
 export const Button = ({children, type, onClick, buttonStyle, buttonSize, buttonRoute}) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];

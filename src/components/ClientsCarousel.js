@@ -1,5 +1,5 @@
 import React from 'react'
-import { ClientsData } from './PartnersData'
+import { ClientsData } from './ClientsData'
 import { ParCliCarousel } from './ParCliCarousel'
 
 function ClientsCarousel() {
