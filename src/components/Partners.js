@@ -1,10 +1,10 @@
 import React from 'react'
 import PartnersCarousel from './PartnersCarousel'
-import "./Partners.css"
+import "./PartnersClients.css"
 
 function Partners() {
   return (
-    <div className='partners'>
+    <div className='part--cli'>
         <h2 className='sub_h2'>Our Partners</h2>
 
         <div className="my-slider">

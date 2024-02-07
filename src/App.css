@@ -61,6 +61,49 @@ img {
   }
 }
 
+.my-slider {
+    /* border: 1px solid black; */
+    width: 90vw;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    /* border: 1px sold red; */
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider:hover .brands{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.brands {
+    /* border: 4px solid green; */
+    display: flex;
+    width: var(--total-partners-width);
+    align-items: center;
+    gap: 50px;
+    animation: slideLeft 150s linear infinite;
+
+}
+
+@media (min-width: 1200px) {
+    .my-slider,
+    .sub_h2 {
+        width: 73.5vw;
+    }
+
+    .slider {
+        width: 73.5vw;
+    }
+}
+
 @keyframes slideLeft {
     100% {
         transform: translateX(calc(-100% / 2));

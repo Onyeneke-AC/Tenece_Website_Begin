@@ -1,0 +1,20 @@
+:root {
+    --total-partners: 40;
+    --logo-width: 11rem;
+    --total-partners-width: calc(var(var(--total-partners)) * var(var(--logo-width) * 2));
+}
+
+.part--cli {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-bottom: 6rem;
+    padding-top: 1rem;
+}
+
+.carousel_img {
+    /* border: 2px solid green; */
+    width: 11rem;
+}
