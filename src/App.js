@@ -10,8 +10,10 @@ import Sidebar from './components/Sidebar';
 import News from './components/News';
 import Partners from './components/Partners';
 import Clients from './components/Clients';
+import Services from './components/Services';
 
 function App() {
+
   return (
     <>
       <Router>
@@ -20,6 +22,7 @@ function App() {
         <News />
         <Introduction />
         <Extra />
+        <Services />
         <Clients />
         <Partners />
         <Footer />
