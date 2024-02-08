@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from './Button';
 import './PropOem.css';
 
 function OemProd() {
@@ -10,6 +11,11 @@ function OemProd() {
       <p className='info-p'>
         Partner Solutions we offer
       </p>
+      <div className="btn_int">
+            <Button className='btns' buttonStyle='btn--primary' buttonRoute='/clients' buttonSize='btn--normal'>
+                    Read more
+            </Button>
+        </div>
     </div>
   )
 }
