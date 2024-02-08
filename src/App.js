@@ -11,6 +11,8 @@ import News from './components/News';
 import Partners from './components/Partners';
 import Clients from './components/Clients';
 import Services from './components/Services';
+import PropProd from './components/PropProd';
+import OemProd from './components/OemProd';
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
         <Introduction />
         <Extra />
         <Services />
+        <PropProd />
+        <OemProd />
         <Clients />
         <Partners />
         <Footer />
