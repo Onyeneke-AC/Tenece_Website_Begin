@@ -54,6 +54,8 @@ img {
   padding-left: 5px;
   color: #242424;
   font-weight: 700;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
 }
 
 @media screen and (min-width: 1200px) {
