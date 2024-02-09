@@ -1,25 +1,46 @@
-import React, {useState} from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import React, {useState} from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import { MenuItems } from './MenuItems';
 import './Navbar.css';
-import Dropdown from './Dropdown' 
+import Dropdown from './Dropdown';
+import { MediaItems } from './MediaItems';
+
 
 function Navbar() {
-    const [dropdown, setDropdown] = useState(false);
+    const [dropdown1, setDropdown1] = useState(false);
+    const [dropdown2, setDropdown2] = useState(false);
 
 
-    const onMouseEnter = () => {
+
+    const onMouseEnter1 = () => {
         if (window.innerWidth < 765) {
-            setDropdown(false);
+            setDropdown1(false);
         } else {
-            setDropdown(true);
+            setDropdown1(true);
         }
     };
 
-    const onMouseLeave = () => {
+    const onMouseLeave1 = () => {
         if (window.innerWidth < 765) {
-            setDropdown(false);
+            setDropdown1(false);
         } else {
-            setDropdown(false);
+            setDropdown1(false);
+        }
+    } 
+
+    const onMouseEnter2 = () => {
+        if (window.innerWidth < 765) {
+            setDropdown2(false);
+        } else {
+            setDropdown2(true);
+        }
+    };
+
+    const onMouseLeave2 = () => {
+        if (window.innerWidth < 765) {
+            setDropdown2(false);
+        } else {
+            setDropdown2(false);
         }
     } 
 
@@ -35,13 +56,13 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li className="nav-item"
-                            onMouseEnter={onMouseEnter}
-                            onMouseLeave={onMouseLeave}
+                            onMouseEnter={onMouseEnter1}
+                            onMouseLeave={onMouseLeave1}
                         >
                             <NavLink to='/about' className='nav-links'>
                                 About Us <i className="fas fa-caret-down"/>
                             </NavLink>
-                            {dropdown && <Dropdown />}
+                            {dropdown1 && <Dropdown dataItem={MenuItems} />}
                         </li>
                         <li className="nav-item">
                             <NavLink to='/products' className='nav-links'>
@@ -58,10 +79,11 @@ function Navbar() {
                                 Clients
                             </NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item" onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>
                             <NavLink to='/media' className='nav-links'>
                                 Media <i className="fas fa-caret-down"></i>
                             </NavLink>
+                            {dropdown2 && <Dropdown dataItem={MediaItems}/>}
                         </li>
                         <li className="nav-item">
                             <NavLink to='/contact-us' className='nav-links'>

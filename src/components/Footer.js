@@ -33,14 +33,14 @@ function Footer() {
           <Link to="/">Clients</Link>
         </div>
 
-        <div class='footer-link-items hover-links'>
+        <div className='footer-link-items hover-links'>
           <h2>Community</h2>
           <Link to='/'>News</Link>
           <Link to='/'>Blog</Link>
           <Link to='/'>Contact Us</Link>
         </div>
 
-        <div class='footer-link-items social-icons'>
+        <div className='footer-link-items social-icons'>
           <h2>Be Social</h2>
           <div className='social-icons-alone'>
           <Link to='/' className="social-icon-link facebook" target='_blank' aria-label='Facebook'>
@@ -50,23 +50,23 @@ function Footer() {
             <i className="fab fa-instagram" />
           </Link>
           <Link className='social-icon-link youtube' to='/' target='_blank' aria-label='Youtube'>
-            <i class='fab fa-youtube' />
+            <i className='fab fa-youtube' />
           </Link>
           <Link
-            class='social-icon-link twitter'
+            className='social-icon-link twitter'
             to='/'
             target='_blank'
             aria-label='Twitter'
           >
-            <i class='fab fa-twitter' />
+            <i className='fab fa-twitter' />
           </Link>
           <Link
-            class='social-icon-link twitter'
+            className='social-icon-link twitter'
             to='/'
             target='_blank'
             aria-label='LinkedIn'
           >
-            <i class='fab fa-linkedin' />
+            <i className='fab fa-linkedin' />
           </Link>
           </div>
         </div>
@@ -78,10 +78,10 @@ function Footer() {
             </small>
         </div>
         <div className="privacy-links">
-          <Link to="/" class="footer--privacy">
+          <Link to="/" className="footer--privacy">
                 IMS Policy Statement
           </Link>
-          <Link to="/" class="footer--privacy">
+          <Link to="/" className="footer--privacy">
                 Privacy Policies
           </Link>
         </div>
