@@ -69,7 +69,7 @@
   opacity: 0.95;
   left: 0;
   transition: all 0.8s ease;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .sidebar-wrap {
@@ -105,4 +105,27 @@
   .sidebar-nav {
     display: none;
   }
+}
+
+.sidebar-link {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: 11.8px;
+  /*border: 1px solid blue;*/
+}
+
+  .sidebar-link:hover {
+    color: #DA251C;
+    border-top: 1px solid #DA251C;
+    cursor: pointer;
+}
+
+.active {
+  color: #DA251C;
+
 }

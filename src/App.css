@@ -97,3 +97,8 @@ img {
         transform: translateX(calc(-100% / 2));
     }
 }
+
+.active {
+  color: #DA251C;
+  border-top: 1px solid #DA251C;
+}

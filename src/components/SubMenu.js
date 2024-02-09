@@ -1,30 +1,31 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import './Sidebar.css';
 
-const SidebarLink = styled(Link)`
-  display: flex;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 1rem;
-  list-style: none;
-  text-decoration: none;
-  font-size: 11.8px;
-  // border: 1px solid blue;
+// const SidebarLink = styled(NavLink)`
+//   display: flex;
+//   color: #fff;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 0.8rem 1rem;
+//   list-style: none;
+//   text-decoration: none;
+//   font-size: 11.8px;
+//   // border: 1px solid blue;
 
-  &:hover {
-    color: #DA251C;
-    border-top: 1px solid #DA251C;
-    cursor: pointer;
-  }
-`;
+//   &:hover {
+//     color: #DA251C;
+//     border-top: 1px solid #DA251C;
+//     cursor: pointer;
+//   }
+// `;
 
 const SidebarLabel = styled.span`
   margin-left: 3px;
 `;
 
-const DropdownLink = styled(Link)`
+const DropdownLink = styled(NavLink)`
   background: #000;
   padding: 0.8rem 1rem;
   display: flex;
@@ -48,7 +49,7 @@ const SubMenu = ({ item }) => {
 
   return (
     <>
-      <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
+      <NavLink className="sidebar-link" to={item.path} onClick={item.subNav && showSubnav}>
         <div>
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
@@ -59,7 +60,7 @@ const SubMenu = ({ item }) => {
             ? item.iconClosed
             : null}
         </div>
-      </SidebarLink>
+      </NavLink>
       {subnav &&
         item.subNav.map((item, index) => {
           return (
