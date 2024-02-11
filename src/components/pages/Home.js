@@ -1,16 +1,16 @@
 import React from 'react';
 // import '../../App.css';
-import Navbar from '../../components/Navbar';
-import Introduction from '../../components/Introduction';
-import Extra from '../../components/Extra';
-import Footer from '../../components/Footer';
-import Sidebar from '../../components/Sidebar';
-import News from '../../components/News';
-import Partners from '../../components/Partners';
-import Clients from '../../components/Clients';
-import Services from '../../components/Services';
-import PropProd from '../../components/PropProd';
-import OemProd from '../../components/OemProd';
+import Navbar from '../templates/header/Navbar';
+import Extra from '../templates/intro/Extra';
+import Sidebar from '../templates/header/Sidebar';
+import News from '../templates/header/News';
+import Partners from '../templates/body/Partners';
+import Clients from '../templates/body/Clients';
+import Services from '../templates/body/Services';
+import PropProd from '../templates/body/PropProd';
+import OemProd from '../templates/body/OemProd';
+import Introduction from '../templates/intro/Introduction';
+import Footer from '../templates/footer/Footer';
 
 function Home() {
   return (
